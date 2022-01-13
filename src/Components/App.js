@@ -7,6 +7,7 @@ import Header from "./Header";
 function App() {
   const [contacts, setContacts] = useState([]);
   const addContactHandler = (contact) => {
+    setContacts([...contacts, contact]);
     console.log(contact);
   };
 
