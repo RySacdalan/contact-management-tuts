@@ -6,7 +6,7 @@ const ContactCard = ({ contact }) => {
   return (
     <div className="ui celled list">
       <div className="item">
-        <img className="ui avatar image" src={avatar} alt="Image" />
+        <img className="ui avatar image" src={avatar} alt="Avatar" />
         <div className="content">
           <div className="header">{name}</div>
           {email}
