@@ -24,11 +24,19 @@ function App() {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(contacts));
   }, [contacts]);
 
+  //Deleting contact
+  const removeContact = (id) => {
+    const newSetContacts = contacts.filter((contact) => {
+      return contact.id !== id;
+    });
+    setContacts(newSetContacts);
+  };
+
   return (
     <div className="ui container">
       <Header />
       <AddContact addContactHandler={addContactHandler} />
-      <ContactList contacts={contacts} />
+      <ContactList contacts={contacts} removeContactId={removeContact} />
     </div>
   );
 }

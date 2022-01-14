@@ -1,0 +1,7 @@
+i {
+  color: red;
+}
+i:hover {
+  cursor: pointer;
+  color: blue;
+}

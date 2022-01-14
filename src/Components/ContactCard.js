@@ -1,8 +1,9 @@
 import React from "react";
 import avatar from "../Images/avatar-icon.png";
+import "./App.css";
 
-const ContactCard = ({ contact }) => {
-  const { name, email } = contact;
+const ContactCard = ({ contact, clickHandler }) => {
+  const { name, email, id } = contact;
   return (
     <div className="ui celled list">
       <div className="item">
@@ -12,7 +13,7 @@ const ContactCard = ({ contact }) => {
           {email}
           <i
             className="trash alternate outline icon"
-            style={{ color: "red", marginLeft: "10px" }}
+            onClick={() => clickHandler(id)}
           ></i>
         </div>
       </div>
