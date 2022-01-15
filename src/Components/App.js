@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 import AddContact from "./AddContact";
 import ContactList from "./ContactList";
 import Header from "./Header";
+import Api from "../Api/Contacts";
 
 function App() {
   const LOCAL_STORAGE_KEY = "contacts";
@@ -12,11 +13,19 @@ function App() {
     setContacts([...contacts, { id: uuidv4(), ...contact }]);
   };
 
-  //Getting the data from the local storage
-  //getItem is on top of setItem code block.
+  //Getting the data from json
+  const retrieveContacts = async () => {
+    const response = await Api.get("/Contacts");
+    return response.data;
+  };
+
   useEffect(() => {
-    const getLocalData = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
-    if (getLocalData) setContacts(getLocalData);
+    const getAllContacts = async () => {
+      const allContacts = await retrieveContacts();
+      if (allContacts) setContacts(allContacts);
+    };
+
+    getAllContacts();
   }, []);
 
   //Setting up the data to local storage

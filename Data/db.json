@@ -1,0 +1,14 @@
+{
+    "contacts": [
+        {
+            "id":"efa42f4a-f5ab-4bba-9a41-aa2225254fdb",
+            "name":"123",
+            "email":"123123"
+        },
+        {
+            "id":"4c23944e-9c8a-4d67-a170-d7255a5b0ca2",
+            "name":"qwe",
+            "email":"qweqwe"
+        }
+    ]
+}
