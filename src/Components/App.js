@@ -9,9 +9,6 @@ import Api from "../Api/Contacts";
 function App() {
   const LOCAL_STORAGE_KEY = "contacts";
   const [contacts, setContacts] = useState([]);
-  const addContactHandler = (contact) => {
-    setContacts([...contacts, { id: uuidv4(), ...contact }]);
-  };
 
   //Getting the data from json
   const retrieveContacts = async () => {
@@ -32,6 +29,17 @@ function App() {
   useEffect(() => {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(contacts));
   }, [contacts]);
+
+  //Adding contact
+  const addContactHandler = async (contact) => {
+    const request = {
+      id: uuidv4(),
+      ...contact,
+    };
+    const response = await Api.post("/Contacts", request);
+    console.log(response);
+    setContacts([...contacts, response.data]);
+  };
 
   //Deleting contact
   const removeContact = (id) => {
