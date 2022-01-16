@@ -42,7 +42,8 @@ function App() {
   };
 
   //Deleting contact
-  const removeContact = (id) => {
+  const removeContact = async (id) => {
+    await Api.delete(`/Contacts/${id}`);
     const newSetContacts = contacts.filter((contact) => {
       return contact.id !== id;
     });

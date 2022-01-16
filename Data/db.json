@@ -1,44 +1,19 @@
 {
   "contacts": [
     {
-      "id": "efa42f4a-f5ab-4bba-9a41-aa2225254fdb",
-      "name": "123",
-      "email": "123123"
-    },
-    {
-      "id": "4c23944e-9c8a-4d67-a170-d7255a5b0ca2",
-      "name": "qwe",
-      "email": "qweqwe"
-    },
-    {
-      "id": "1fe3bf11-7ec6-4e13-affd-1f37bb22261e",
-      "name": "Ryan Sacdalan",
+      "id": "251b9624-297b-422d-9156-f9cebfaf7323",
+      "name": "name",
       "email": "randomemail@yahoo.com"
     },
     {
-      "name": "Ryan Sacdalan",
-      "email": "09362727636",
-      "id": "40HwfZg"
+      "id": "ed3a1e82-d75b-46cd-be93-f339318557c9",
+      "name": "name",
+      "email": "09082322806"
     },
     {
-      "id": "a813b333-6d46-4de1-8828-eda2ea101dcd",
-      "name": "sdfsdfsd",
-      "email": "developer@trashcash.ph"
-    },
-    {
-      "id": "cb797f36-8393-4698-a61d-ee685e847bc5",
+      "id": "d6992726-8bd7-4cca-85f5-caf0d42d9155",
       "name": "123",
       "email": "123123"
-    },
-    {
-      "id": "e7394b0a-5d89-4b86-a101-1528eaefcc40",
-      "name": "sacdalanryanchristian6404@gmail.com",
-      "email": "sacdalanryanchristian6404@gmail.com"
-    },
-    {
-      "id": "1e468511-f9ac-4483-b88b-3e655dae91c0",
-      "name": "Ryan Sacdalan",
-      "email": "sacdalanryanchristian6404@gmail.com"
     }
   ]
 }
