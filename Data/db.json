@@ -1,19 +1,19 @@
 {
   "contacts": [
     {
-      "id": "251b9624-297b-422d-9156-f9cebfaf7323",
-      "name": "name",
+      "id": "4d050597-7107-488a-b38a-95a71399c666",
+      "name": "Ryan Sacdalan",
       "email": "randomemail@yahoo.com"
     },
     {
-      "id": "ed3a1e82-d75b-46cd-be93-f339318557c9",
-      "name": "name",
+      "id": "c8f38efc-2415-459e-ae4a-dade4953deb6",
+      "name": "Ryan Sacdalan",
       "email": "09082322806"
     },
     {
-      "id": "d6992726-8bd7-4cca-85f5-caf0d42d9155",
-      "name": "123",
-      "email": "123123"
+      "id": "b7f69a8c-2c91-4c14-a11b-029de036177b",
+      "name": "Ryan Sacdalan",
+      "email": "developer@trashcash.ph"
     }
   ]
 }

@@ -1,7 +1,31 @@
-i {
-  color: red;
+.main {
+  margin-top: 5em;
 }
-i:hover {
+
+.center {
+  justify-content: center;
+  padding: 10px;
+}
+
+.ui.search input {
+  width: 100%;
+  border-radius: 0 !important;
+}
+
+.item {
+  padding: 15px 0px !important;
+}
+
+i.icon {
+  float: right;
+  font-size: 20px;
   cursor: pointer;
-  color: blue;
+  transform: translate(70px, -15px);
+}
+
+.right {
+  float: right !important;
+}
+.center-div {
+  text-align: center;
 }
