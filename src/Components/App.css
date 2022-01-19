@@ -8,10 +8,16 @@
 }
 
 .ui.search input {
+  margin-bottom: 10px;
   width: 100%;
-  border-radius: 0 !important;
+  border-radius: 5px !important;
 }
-
+.ui .input {
+  width: 100%;
+}
+.search.icon {
+  transform: translate(2px, -5px);
+}
 .item {
   padding: 15px 0px !important;
 }

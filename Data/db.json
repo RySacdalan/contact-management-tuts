@@ -2,13 +2,38 @@
   "contacts": [
     {
       "id": "45f02799-10d2-488d-ab6b-e9bc86b3421d",
-      "name": "Ryan Sacdalan",
+      "name": "Ryan",
       "email": "sacdalanryanchristian6404@gmail.com"
     },
     {
       "id": "db668385-94ed-4a07-9dd4-2d4e3cf9fba2",
-      "name": "whats my name",
+      "name": "i dont know my name",
       "email": "randomemail@yahoo.com"
+    },
+    {
+      "id": "a0538b16-2c12-4e90-9ef3-8cd72cba3055",
+      "name": "random",
+      "email": "randomemail@yahoo.com"
+    },
+    {
+      "id": "2b274d6d-aebc-40c0-85c4-801b25b70301",
+      "name": "Ryan Sacdalan",
+      "email": "sacdalanryanchristian6404@gmail.com"
+    },
+    {
+      "id": "b63b30cc-b250-4198-bf2f-51efc5861f8f",
+      "name": "Another testing",
+      "email": "developer@trashcash.ph"
+    },
+    {
+      "id": "a3f6458b-c93b-4b14-a1be-a2d849982b26",
+      "name": "123",
+      "email": "123123123"
+    },
+    {
+      "id": "7f87b56c-1d22-4f5e-aca7-e1ffec0d346c",
+      "name": "zxzxzx",
+      "email": "zxzxzxzxzx"
     }
   ]
 }
