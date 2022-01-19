@@ -49,7 +49,11 @@ const ContactList = ({
           <i className="search icon"></i>
         </div>
       </div>
-      <div>{renderContactList}</div>
+      <div>
+        {renderContactList.length > 0
+          ? renderContactList
+          : "User contact cannot found :("}
+      </div>
     </div>
   );
 };
