@@ -11,6 +11,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 function App() {
   const LOCAL_STORAGE_KEY = "contacts";
   const [contacts, setContacts] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
 
   //Getting the data from json
   const retrieveContacts = async () => {
@@ -32,6 +34,22 @@ function App() {
   useEffect(() => {
     // localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(contacts));
   }, [contacts]);
+
+  //for searchbar and filtering data
+  const searchHandler = (searchTerm) => {
+    setSearchTerm(searchTerm);
+    if (searchTerm !== "") {
+      const newContactList = contacts.filter((contact) => {
+        return Object.values(contact)
+          .join(" ")
+          .toLowerCase()
+          .includes(searchTerm.toLowerCase());
+      });
+      setSearchResults(newContactList);
+    } else {
+      setSearchResults(contacts);
+    }
+  };
 
   //Adding contact
   const addContactHandler = async (contact) => {
@@ -75,8 +93,10 @@ function App() {
             render={(props) => (
               <ContactList
                 {...props}
-                contacts={contacts}
+                contacts={searchTerm.length < 1 ? contacts : searchResults}
                 removeContactId={removeContact}
+                searchTerm={searchTerm}
+                searchKeyword={searchHandler}
               />
             )}
           />
