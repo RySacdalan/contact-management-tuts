@@ -19,9 +19,11 @@ class EditContact extends React.Component {
       alert("All fields are required!");
       return;
     }
-    this.props.addContactHandler(this.state);
+    this.props.updateContactHandler(this.state);
     this.setState({ name: "", email: "" });
+    this.props.history.push("/");
     console.log(this.state);
+    console.log("Contact updated!");
   };
 
   render() {
@@ -52,7 +54,7 @@ class EditContact extends React.Component {
               onChange={(e) => this.setState({ email: e.target.value })}
             />
           </div>
-          <button className="ui button blue">Edit Contact</button>
+          <button className="ui button blue">Update</button>
           <Link to="/">
             <button className="ui button red">Cancel</button>
           </Link>

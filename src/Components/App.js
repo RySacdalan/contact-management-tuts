@@ -45,7 +45,15 @@ function App() {
   };
 
   //Updating a contact
-  const updateContactHandler = () => {};
+  const updateContactHandler = async (contact) => {
+    const response = await Api.put(`/Contacts/${contact.id}`, contact);
+    const { id } = response.data;
+    setContacts(
+      contacts.map((contact) => {
+        return contact.id === id ? { ...response.data } : contact;
+      })
+    );
+  };
 
   //Deleting contact
   const removeContact = async (id) => {
